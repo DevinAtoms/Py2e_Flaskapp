@@ -2,6 +2,9 @@ from flask import Flask, redirect, url_for, request
 
 app = Flask(__name__)
 
+@app.route('/')
+def index():
+    return 'placeholder'
 
 @app.route('/spell_card/<spell_name>')
 def spell_card(spell_name):

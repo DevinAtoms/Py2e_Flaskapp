@@ -1,0 +1,40 @@
+@media print {
+    .phb {
+        height: 279.4mm;
+        width: 215.9mm;
+    }
+}
+
+/* Cover */
+.cover-title {
+    font-family: 'Eczar', sans-serif !important;
+    color: #4E0707;
+    border: 10px #EFCD98;
+    text-shadow: 1px 1px 0 #EFCD98, -1px 1px 0 #EFCD98, 1px -1px 0 #EFCD98, -1px -1px 0 #EFCD98, 0px 1px 0 #EFCD98, 0px -1px 0 #EFCD98, -1px 0 0 #EFCD98, 1px 0px 0 #EFCD98, 2px 2px 0 #EFCD98, -2px 2px 0 #EFCD98, 2px -2px 0 #EFCD98, -2px -2px 0 #EFCD98, 0px 2px 0 #EFCD98, 0px -2px 0 #EFCD98, -2px 0px 0 #EFCD98, 2px 0px 0 #EFCD98, 1px 2px 0 #EFCD98, -1px 2px 0 #EFCD98, 1px -2px 0 #EFCD98, -1px -2px 0 #EFCD98, 2px 1px 0 #EFCD98, -2px 1px 0 #EFCD98, 2px -1px 0 #EFCD98, -2px -1px 0 #EFCD98;
+    font-size: 7em;
+    text-align: center;
+    width: 820px;
+}
+
+.pageNumber.auto {
+    font-family: 'Tauri', sans-serif;
+    color: #58180D;
+    font-size: 2em;
+    border: 10px #EFCD98;
+    text-shadow: 1px 1px 0 #EFCD98, -1px 1px 0 #EFCD98, 1px -1px 0 #EFCD98, -1px -1px 0 #EFCD98, 0px 1px 0 #EFCD98, 0px -1px 0 #EFCD98, -1px 0px 0 #EFCD98, 1px 0px 0 #EFCD98, 2px 2px 0 #EFCD98, -2px 2px 0 #EFCD98, 2px -2px 0 #EFCD98, -2px -2px 0 #EFCD98, 0px 2px 0 #EFCD98, 0px -2px 0 #EFCD98, -2px 0px 0 #EFCD98, 2px 0px 0 #EFCD98, 1px 2px 0 #EFCD98, -1px 2px 0 #EFCD98, 1px -2px 0 #EFCD98, -1px -2px 0 #EFCD98, 2px 1px 0 #EFCD98, -2px 1px 0 #EFCD98, 2px -1px 0 #EFCD98, -2px -1px 0 #EFCD98;
+}
+
+.phb hr + section blockquote {
+    background: white;
+}
+
+.flavor {
+    font-family: 'DM Serif Text', serif !important;
+    text-align: justify;
+    text-justify: inter-character;
+    font-size: 1.25em;
+    line-height: 1.4;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

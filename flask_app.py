@@ -1,11 +1,11 @@
-from flask import Flask, redirect, url_for, request
+from flask import Flask, redirect, url_for, request, render_template
 
 app = Flask(__name__)
 
 
 @app.route('/')
 def index():
-    return 'placeholder'
+    return render_template('index.html')
 
 
 @app.route('/spell_card/<spell_name>')

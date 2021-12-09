@@ -1,0 +1,1051 @@
+/* Created by Apostol Apostolov. V.1.041 7th of March 2020.  */
+/* For support, join Grit and Glory Discord at https://discord.gg/ZDtCmhm */
+/* Please do not remove this message. It allows people who copy the template from your work get dev support. */
+/* It also helps others find newer version of the template by comparing the version number with their own    */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Eczar:800|Roboto+Condensed|Tauri|Teko:500|Changa+One|Gelasio|DM+Serif+Text:400i&display=swap'); /* Loads fonts from Google Web Fonts. Add additional @import if you license web fonts from elsewhere (such as from Monotype) */
+
+
+/* Proper Printing */
+@media print {
+    .phb {
+        height: 279.4mm;
+        width: 215.9mm;
+    }
+}
+
+
+/* Cover */
+.cover-title {
+    font-family: 'Eczar', sans-serif !important;
+    color: #4E0707;
+    border: 10px #EFCD98;
+    text-shadow: 1px 1px 0 #EFCD98, -1px 1px 0 #EFCD98, 1px -1px 0 #EFCD98, -1px -1px 0 #EFCD98, 0px 1px 0 #EFCD98, 0px -1px 0 #EFCD98, -1px 0 0 #EFCD98, 1px 0px 0 #EFCD98, 2px 2px 0 #EFCD98, -2px 2px 0 #EFCD98, 2px -2px 0 #EFCD98, -2px -2px 0 #EFCD98, 0px 2px 0 #EFCD98, 0px -2px 0 #EFCD98, -2px 0px 0 #EFCD98, 2px 0px 0 #EFCD98, 1px 2px 0 #EFCD98, -1px 2px 0 #EFCD98, 1px -2px 0 #EFCD98, -1px -2px 0 #EFCD98, 2px 1px 0 #EFCD98, -2px 1px 0 #EFCD98, 2px -1px 0 #EFCD98, -2px -1px 0 #EFCD98;
+    font-size: 7em;
+    text-align: center;
+    width: 820px;
+}
+
+
+body {
+;
+}
+
+
+.pageNumber.auto {
+    font-family: 'Tauri', sans-serif;
+    color: #58180D;
+    font-size: 2em;
+    border: 10px #EFCD98;
+    text-shadow: 1px 1px 0 #EFCD98, -1px 1px 0 #EFCD98, 1px -1px 0 #EFCD98, -1px -1px 0 #EFCD98, 0px 1px 0 #EFCD98, 0px -1px 0 #EFCD98, -1px 0px 0 #EFCD98, 1px 0px 0 #EFCD98, 2px 2px 0 #EFCD98, -2px 2px 0 #EFCD98, 2px -2px 0 #EFCD98, -2px -2px 0 #EFCD98, 0px 2px 0 #EFCD98, 0px -2px 0 #EFCD98, -2px 0px 0 #EFCD98, 2px 0px 0 #EFCD98, 1px 2px 0 #EFCD98, -1px 2px 0 #EFCD98, 1px -2px 0 #EFCD98, -1px -2px 0 #EFCD98, 2px 1px 0 #EFCD98, -2px 1px 0 #EFCD98, 2px -1px 0 #EFCD98, -2px -1px 0 #EFCD98;
+}
+
+
+
+/* Hides the box used by the page number on the cover page. Remove "none" if you don't use a cover page */
+
+/* Headers */
+.phb h1, .phb h2 {
+    font-family: 'Eczar', sans-serif;
+}
+
+/* No Taroca, unless you license it yourself */
+.phb h1 {
+    text-align: center;
+    font-size: 5em;
+    margin-bottom: 30px;
+}
+
+.phb h2 {
+    color: #02256E;
+    font-size: 2.25em;
+}
+
+.phb h3, .phb h4, .phb h5 {
+    font-family: 'Tauri', sans-serif;
+}
+
+.phb h3 {
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+    border-bottom: 0
+}
+
+.phb h4 {
+    color: #000000;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 0;
+    margin-top: inherit;
+    text-transform: uppercase;
+}
+
+.phb h5 {
+    text-transform: uppercase;
+}
+
+.phb h6 {
+    background-color: #002664;
+    color: #EDE3C8;
+    border-bottom: 1px solid #002664;
+    margin-bottom: 5px;
+    padding-left: 8px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    font-size: 1.25em;
+    font-family: 'Tauri', sans-serif;
+    text-transform: uppercase;
+    border-radius: 12px 12px 0 0px;
+}
+
+/* Content */
+.phb, .phb p, .phb p + p, .phb ul, .phb ol {
+    font-family: 'Gelasio', sans-serif;
+    text-align: justify;
+    text-justify: inter-character;
+    line-height: 1.4;
+    margin: 8px;
+    height: 288px;
+    width: 480px
+}
+
+.phb hr + section blockquote {
+    background: white;
+}
+
+.flavor {
+    font-family: 'DM Serif Text', serif !important;
+    text-align: justify;
+    text-justify: inter-character;
+    font-size: 1.25em;
+    line-height: 1.4;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Actions */
+.label {
+    float: right;
+    text-align: right;
+    color: black;
+    text-transform: uppercase;;
+}
+.action {
+    object-fit: contain;
+    vertical-align: text-bottom;
+    padding-right: 2px;
+    padding-left: 1px;
+}
+
+/* Keywords */
+.taglist {
+    height: 22px;
+    margin-bottom: 6px;
+    margin-top: 2px;
+}
+
+.tag {
+    font-family: 'Roboto Condensed', sans-serif;
+    border-color: #DAC68A;
+    border-left: 2px solid #DAC68A;
+    border-right: 2px solid #DAC68A;
+    border-radius: 2px;
+    background-color: #58180D;
+    color: white;
+    text-align: center;
+    margin-top: 2px;
+    margin-right: 2px;
+    min-width: 30px;
+    float: left;
+    margin-bottom: -5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-transform: uppercase;
+}
+
+/*Keyword for Rarities */
+.uncommon {
+    background-color: #98513D !important;
+}
+
+.rare {
+    background-color: #002664 !important;
+}
+
+.unique {
+    background-color: #54166E !important;
+}
+
+/* Keyword for Creatures */
+.align {
+    background-color: #576293 !important;
+}
+
+.size {
+    background-color: #3B7B59 !important;
+}
+
+/* Compact Rules */
+.rule, .rule p, .rule p + p {
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 1.4;
+}
+
+.rule p, .rule p + p {
+    text-indent: 1.5em;
+    line-height: 1.4;
+    font-size: 100%;
+}
+
+p .oneaction {
+    margin-top: -0px;
+    margin-bottom: -0px;
+    width: 14px;
+    margin-right: -1px;
+    margin-left: -1px;
+}
+
+p .twoaction {
+    margin-top: -0px;
+    margin-bottom: -0px;
+    height: 22px;
+    width: 24px;
+    margin-right: -1px;
+    margin-left: -1px;
+}
+
+p .threeaction {
+    margin-top: 0px;
+    margin-bottom: -0px;
+    height: 28px;
+    width: 32px;
+    margin-right: -1px;
+    margin-left: -1px;
+}
+
+h5 .oneaction, h4 .oneaction {
+    margin-top: -10px;
+    margin-bottom: -6px;
+    width: 16px;
+    margin-right: -1px;
+    margin-left: -1px;
+}
+
+h5 .twoaction, h4 .twoaction {
+    margin-top: -10px;
+    margin-bottom: -6px;
+    height: 26px;
+    width: 28px;
+    margin-right: -1px;
+    margin-left: -1px;
+}
+
+h5 .threeaction, h4 .threeaction {
+    margin-top: -10px;
+    margin-bottom: -6px;
+    height: 34px;
+    width: 38px;
+    margin-right: -1px;
+    margin-left: -1px;
+}
+
+.rule .oneaction {
+    width: 14px;
+    margin-top: -6px;
+    margin-bottom: -6px;
+    margin-right: -1px;
+    margin-left: -1px;
+}
+
+.rule .twoaction {
+    height: 22px;
+    width: 24px;
+    margin-top: -6px;
+    margin-bottom: -6px;
+    margin-right: -1px;
+    margin-left: -1px;
+}
+
+.rule .threeaction {
+    height: 28px;
+    width: 32px;
+    margin-top: -7px;
+    margin-bottom: -6px;
+    margin-right: -1px;
+    margin-left: -1px;
+}
+
+.result {
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+}
+
+.ability {
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+}
+
+.abilityname {
+    font-weight: bold;
+}
+
+.r4:before {
+    content: "Critical Success ";
+    font-weight: bold;
+}
+
+.r3:before {
+    content: "Success ";
+    font-weight: bold;
+}
+
+.r2:before {
+    content: "Failure ";
+    font-weight: bold;
+}
+
+.r1:before {
+    content: "Critical Failure ";
+    font-weight: bold;
+}
+
+/* Boxed Containers */
+.box {
+    border-bottom: 1px solid #000000;
+    hyphens: auto;
+    word-break: break-word;
+}
+
+/* Normal boxes just put a separator line at the bottom */
+.reqbox {
+    border-bottom: 1px solid #000000;
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+    hyphens: manual;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+
+/* Boxes for requirements and prerequisites require the Pathfinder signature identation */
+.tab {
+    text-indent: 1.5em;
+}
+
+/* Labels for Feats and Actions */
+.prereq:before {
+    content: "Prerequisites ";
+    font-weight: bold;
+}
+
+.req:before {
+    content: "Requirements ";
+    font-weight: bold;
+}
+
+.name {
+    font-style: italic;
+}
+
+.name:before {
+    content: "Name ";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.name:after {
+    content: "; ";
+}
+
+.hands:before {
+    content: "Hands ";
+    font-weight: bold;
+}
+
+.hands:after {
+    content: "; ";
+}
+
+/*Labels for Spells */
+.traditions:before {
+    content: "Traditions ";
+    font-weight: bold;
+}
+
+.cast:before {
+    content: "Cast ";
+    font-weight: bold;
+}
+
+.range {
+    float: left;
+    margin-right: 30px;
+}
+
+.range:before {
+    content: "Range ";
+    font-weight: bold;
+}
+
+.range:after {
+    content: ";";
+}
+
+.targets:before {
+    content: "Targets ";
+    font-weight: bold;
+}
+
+.area:before {
+    content: "Area ";
+    font-weight: bold;
+}
+
+.savingthrow:before {
+    content: "Saving Throw ";
+    font-weight: bold;
+}
+
+.trigger:before {
+    content: "Trigger ";
+    font-weight: bold;
+}
+
+.trigger:after {
+    content: "; ";
+}
+
+.duration:before {
+    content: "Duration ";
+    font-weight: bold;
+}
+
+.heightened:before {
+    content: "Heightened ";
+    font-weight: bold;
+}
+
+.heightenedp1:before {
+    content: "Heightened (+1) ";
+    font-weight: bold;
+}
+
+.heightenedp2:before {
+    content: "Heightened (+2) ";
+    font-weight: bold;
+}
+
+.heightenedp3:before {
+    content: "Heightened (+3) ";
+    font-weight: bold;
+}
+
+.heightenedp4:before {
+    content: "Heightened (+4) ";
+    font-weight: bold;
+}
+
+.heightened1:before {
+    content: "Heightened (1st) ";
+    font-weight: bold;
+}
+
+.heightened2:before {
+    content: "Heightened (2nd) ";
+    font-weight: bold;
+}
+
+.heightened3:before {
+    content: "Heightened (3rd) ";
+    font-weight: bold;
+}
+
+.heightened4:before {
+    content: "Heightened (4th) ";
+    font-weight: bold;
+}
+
+.heightened5:before {
+    content: "Heightened (5th) ";
+    font-weight: bold;
+}
+
+.heightened6:before {
+    content: "Heightened (6th) ";
+    font-weight: bold;
+}
+
+.heightened7:before {
+    content: "Heightened (7th) ";
+    font-weight: bold;
+}
+
+.heightened8:before {
+    content: "Heightened (8th) ";
+    font-weight: bold;
+}
+
+.heightened9:before {
+    content: "Heightened (9th) ";
+    font-weight: bold;
+}
+
+.heightened10:before {
+    content: "Heightened (10th) ";
+    font-weight: bold;
+}
+
+/*Labels for Spells */
+.perception:before {
+    content: "Perception ";
+    font-weight: bold;
+}
+
+.languages:before {
+    content: "Languages ";
+    font-weight: bold;
+}
+
+.skills:before {
+    content: "Skills ";
+    font-weight: bold;
+}
+
+.str {
+    float: left;
+    margin-right: 19px;
+}
+
+.str:before {
+    content: "Str ";
+    font-weight: bold;
+}
+
+.str:after {
+    content: "; ";
+}
+
+.dex {
+    float: left;
+    margin-right: 19px;
+}
+
+.dex:before {
+    content: "Dex ";
+    font-weight: bold;
+}
+
+.dex:after {
+    content: "; ";
+}
+
+.con {
+    float: left;
+    margin-right: 19px;
+}
+
+.con:before {
+    content: "Con ";
+    font-weight: bold;
+}
+
+.con:after {
+    content: "; ";
+}
+
+.int {
+    float: left;
+    margin-right: 19px;
+}
+
+.int:before {
+    content: "Int ";
+    font-weight: bold;
+}
+
+.int:after {
+    content: "; ";
+}
+
+.wis {
+    float: left;
+    margin-right: 19px;
+}
+
+.wis:before {
+    content: "Wis ";
+    font-weight: bold;
+}
+
+.wis:after {
+    content: "; ";
+}
+
+.cha:before {
+    content: "Cha ";
+    font-weight: bold;
+}
+
+.ac {
+    float: left;
+    margin-right: 19px;
+}
+
+.ac:before {
+    content: "AC ";
+    font-weight: bold;
+}
+
+.ac:after {
+    content: "; ";
+}
+
+.fort {
+    float: left;
+    margin-right: 19px;
+}
+
+.fort:before {
+    content: "Fort ";
+    font-weight: bold;
+}
+
+.fort:after {
+    content: "; ";
+}
+
+.ref {
+    float: left;
+    margin-right: 19px;
+}
+
+.ref:before {
+    content: "Ref ";
+    font-weight: bold;
+}
+
+.ref:after {
+    content: "; ";
+}
+
+.will:before {
+    content: "Will ";
+    font-weight: bold;
+}
+
+.hp:before {
+    content: "HP ";
+    font-weight: bold;
+}
+
+.hp:after {
+    content: "; ";
+}
+
+.bt:before {
+    content: "BT ";
+    font-weight: bold;
+}
+
+.bt:after {
+    content: "; ";
+}
+
+.hardness:before {
+    content: "Hardness ";
+    font-weight: bold;
+}
+
+.hardness:after {
+    content: "; ";
+}
+
+.immunities:before {
+    content: "Immunities ";
+    font-weight: bold;
+}
+
+.immunities:after {
+    content: "; ";
+}
+
+.weaknesses:before {
+    content: "Weaknesses ";
+    font-weight: bold;
+}
+
+.weaknesses:after {
+    content: "; ";
+}
+
+.resistances:before {
+    content: "Resistances ";
+    font-weight: bold;
+}
+
+.speed {
+    clear: left;
+}
+
+.speed:before {
+    content: "Speed ";
+    font-weight: bold;
+}
+
+.melee:before {
+    content: "Melee ";
+    font-weight: bold;
+}
+
+.melee:after {
+    content: ", ";
+}
+
+.ranged:before {
+    content: "Ranged ";
+    font-weight: bold;
+}
+
+.ranged:after {
+    content: ", ";
+}
+
+.damage {
+    word-break: break-all;
+}
+
+.damage:before {
+    content: "Damage ";
+    font-weight: bold;
+}
+
+.innatespells {
+    font-weight: bold;
+}
+
+.innatespells:after {
+    content: " Innate Spells ";
+    font-weight: bold;
+}
+
+.preparedspells {
+    font-weight: bold;
+}
+
+.preparedspells:after {
+    content: " Prepared Spells ";
+    font-weight: bold;
+}
+
+.dc:before {
+    content: "DC ";
+}
+
+.dc:after {
+    content: ", ";
+}
+
+.spellattack:before {
+    content: "attack ";
+}
+
+.spellattack:after {
+    content: "; ";
+}
+
+.sp1, .sp2, .sp3, .sp4, .sp5, .sp6, .sp7, .sp8, .sp9, .sp10, .can1, .can2, .can3, .can4, .can5, .can6, .can7, .can8, .can9, .can10 {
+    font-style: italic;
+}
+
+.sp1:before {
+    content: " 1st ";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.sp2:before {
+    content: " 2nd ";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.sp3:before {
+    content: " 3rd ";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.sp4:before {
+    content: " 4th ";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.sp5:before {
+    content: " 5th ";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.sp6:before {
+    content: " 6th ";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.sp7:before {
+    content: " 7th ";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.sp8:before {
+    content: " 8th ";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.sp9:before {
+    content: " 9th ";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.sp10:before {
+    content: " 10th ";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.can1:before {
+    content: " Cantrips (1st) ";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.can2:before {
+    content: " Cantrips (2nd) ";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.can3:before {
+    content: " Cantrips (3rd) ";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.can4:before {
+    content: " Cantrips (4th) ";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.can5:before {
+    content: " Cantrips (5th) ";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.can6:before {
+    content: " Cantrips (6th) ";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.can7:before {
+    content: " Cantrips (7th) ";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.can8:before {
+    content: " Cantrips (8th) ";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.can9:before {
+    content: " Cantrips (9th) ";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.can10:before {
+    content: " Cantrips (10th) ";
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Labels for Hazards */
+.stealth:before {
+    content: "Stealth ";
+    font-weight: bold;
+}
+
+.description:before {
+    content: "Description ";
+    font-weight: bold;
+}
+
+.disable:before {
+    content: "Disable ";
+    font-weight: bold;
+}
+
+.routine:before {
+    content: "Routine ";
+    font-weight: bold;
+}
+
+.reset:before {
+    content: "Reset ";
+    font-weight: bold;
+}
+
+/* Labels for Items */
+.price:before {
+    content: "Price ";
+    font-weight: bold;
+}
+
+.usage:before {
+    content: "Usage ";
+    font-weight: bold;
+}
+
+.usage:after {
+    content: "; ";
+}
+
+.bulk:before {
+    content: "Bulk ";
+    font-weight: bold;
+}
+
+.bulk:after {
+    content: "; ";
+}
+
+.type {
+    font-style: italic;
+}
+
+.type:before {
+    content: "Type ";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.level:before {
+    content: "Level ";
+    font-weight: bold;
+}
+
+.activate:before {
+    content: "Activate ";
+    font-weight: bold;
+}
+
+.activate:after {
+    content: "; ";
+}
+
+.effect:before {
+    content: "Effect ";
+    font-weight: bold;
+}
+
+.onset:before {
+    content: "Onset ";
+    font-weight: bold;
+}
+
+.maxduration:before {
+    content: "Maximum Duration ";
+    font-weight: bold;
+}
+
+.stage1:before {
+    content: "Stage 1 ";
+    font-weight: bold;
+}
+
+.stage2:before {
+    content: "Stage 2 ";
+    font-weight: bold;
+}
+
+.stage3:before {
+    content: "Stage 3 ";
+    font-weight: bold;
+}
+
+.stage4:before {
+    content: "Stage 4 ";
+    font-weight: bold;
+}
+
+.stage5:before {
+    content: "Stage 5 ";
+    font-weight: bold;
+}
+
+.stage6:before {
+    content: "Stage 6 ";
+    font-weight: bold;
+}
+
+.craftrequirements:before {
+    content: "Craft Requirements ";
+    font-weight: bold;
+}
+
+.savingthrow:after, .onset:after, .maxduration:after, .stage1:after, .stage2:after, .stage3:after, .stage4:after, .stage5:after, .stage6:after, .level:after, .type:after {
+    content: "; ";
+}
+
+.quantity:before {
+    content: "Quantity ";
+    font-weight: bold;
+}
+
+.quantity:after {
+    content: "; ";
+}
+
+.ammunition:before {
+    content: "Ammunition ";
+    font-weight: bold;
+}
+
+.special:before {
+    content: "Special ";
+    font-weight: bold;
+}
+
+.sageadvice:before {
+    content: "Developer Feedback ";
+    font-weight: bold;
+}
+
+.damage:before {
+    content: "Damage ";
+    font-weight: bold;
+}
+
+.damage:after {
+    content: "; ";
+}
+
+.thrown:before {
+    content: "thrown ";
+    font-weight: bold;
+}
+
+.criticalspecialization:before {
+    content: "Critical Specialization ";
+    font-weight: bold;
+}

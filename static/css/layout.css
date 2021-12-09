@@ -1,0 +1,29 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+  border: 10px
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-rows: 0.5fr 0.3fr 2.6fr 0.6fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "head head head"
+    "side trait trait"
+    "side desc desc"
+    "side desc desc";
+}
+
+.head { grid-area: head; }
+
+.trait { grid-area: trait; }
+
+.side { grid-area: side; }
+
+.desc { grid-area: desc; }

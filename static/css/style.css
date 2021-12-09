@@ -1,0 +1,103 @@
+
+@font-face {
+	font-family: JetBrains;
+	 src:url(../webfonts/JetBrainsMono-Regular.woff2);
+}
+
+@font-face {
+	font-family: JetBrains;
+	src: url(../webfonts/JetBrainsMono-Bold.woff2);
+	font-weight: bold;
+}
+
+a.blank {
+  color: inherit;
+  background-color: #FFFFFF;
+  text-decoration: inherit;
+}
+
+strong.extra {
+	font-weight: 500;
+	font-family: inherit;
+}
+
+.body{
+	background-color: inherit;
+	color: #590925;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	font-family: JetBrains, sans-serif;
+	font-size: 12pt;
+	text-align: left;
+}
+
+div.main_page {
+	background-color: #FFFFFF;
+	position: relative;
+	display: table;
+	margin: auto;
+	width: 80%;
+}
+
+.page_header {
+	background-color: #FFFFFF;
+	display: inline;
+	font-size: 250%;
+	font-weight: bold;
+    margin-bottom: 0;
+    padding: 12px 12px 12px 12px;
+}
+
+div.bar {
+	background-color: inherit;
+	width: 100%;
+	border-style: solid none solid none;
+	border-color: #04151F;
+}
+
+.nav {
+	background-color: inherit;
+	text-align: center;
+	text-decoration: none;
+	font-size: 125%;
+	padding-inline-start: 0;
+	margin-block-start: 12px;
+	margin-block-end: 12px;
+	margin-left: 10%;
+	margin-right: auto;
+}
+
+#nav ul {
+	background-color: inherit;
+	padding-inline-start: 0;
+	text-align: left;
+	margin-block-start: 10px;
+	margin-block-end: 10px;
+	margin-inline-start: auto;
+}
+
+#nav li {
+	background-color: inherit;
+	display: inline;
+	font-weight: normal;
+	margin-right: 20px;
+}
+
+.content_section {
+	background-color: inherit;
+	margin: 6px 6px 6px 6px;
+}
+
+div.content_header {
+	background-color: inherit;
+	padding: 12px 0 12px 0;
+	font-weight: bold;
+	font-size: 112%;
+	text-align: center;
+}
+
+div.content_text {
+	background-color: inherit;
+	margin: 3px 3px 3px 3px;
+	font_size: 100%;
+}
